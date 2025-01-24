@@ -2,11 +2,11 @@ const std = @import("std");
 const testing = std.testing;
 const assert = std.debug.assert;
 
-const StringError = error{
+pub const StringError = error{
     IndexOutOfBounds,
 };
 
-const String = struct {
+pub const String = struct {
     const Self = @This();
 
     /// the buffer of data. len of buf is NOT always the length of the string!!!
