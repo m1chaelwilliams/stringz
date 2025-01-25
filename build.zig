@@ -7,7 +7,7 @@ pub fn build(b: *std.Build) void {
     _ = b.addModule("stringz", .{ .root_source_file = b.path("src/stringz.zig") });
 
     const lib_unit_tests = b.addTest(.{
-        .root_source_file = b.path("src/root.zig"),
+        .root_source_file = b.path("src/strings.zig"),
         .target = target,
         .optimize = optimize,
     });

@@ -32,7 +32,7 @@ const dep_stringz = b.dependency("stringz", .{
     .optimize = optimize,
 });
 
-exe.root_module.addImport("stringz", dep_zstbi.module("root"));
+exe.root_module.addImport("stringz", dep_zstbi.module("stringz"));
 ```
 
 ## License
